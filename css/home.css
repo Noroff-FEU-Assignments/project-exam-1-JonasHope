@@ -1,0 +1,77 @@
+/* Header */
+
+.logo_header h1 {
+    font-size: 25px;
+}
+
+/* Main content */
+
+.home_container {
+    max-width: 1000px;
+    margin:50px auto;
+    padding:40px;
+}
+
+.home_text {
+    background-color: var(--bc03);
+    box-shadow: 0 5px 10px var(--tc03);
+    color: var(--tc01);
+    font-family: var(--ft02);
+    padding: 20px 40px;
+    margin: 100px 0px;
+}
+
+.home_text p, .home_text h3 {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+/* Featured image */
+
+.home_img {
+    background-image: url("/images/main.jpg");
+    background-size: cover;
+    min-height: 50vh;
+    background-position-y: bottom, center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.home_img h2 {
+    max-width: 535px;
+    line-height: 60px;
+}
+
+/* Slider */
+
+.slider_img {
+    max-width: 1000px;
+    height: 200px;
+}
+
+.slider {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.slider_card {
+    background-color: var(--bc03);
+    box-shadow: 0 5px 10px var(--tc03);
+    margin:10px;
+    text-align: center;
+}
+
+.arrows {
+    font-size: 50px;
+    color: var(--tc01); 
+    display:flex;
+    justify-content: space-between;
+}

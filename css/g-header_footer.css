@@ -1,0 +1,9 @@
+.navigation a {
+    text-decoration: none;
+}
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}

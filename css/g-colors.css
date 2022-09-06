@@ -1,0 +1,78 @@
+/* Global Colors */
+
+:root {
+    --bc01:#F5F5F5;
+    --bc02:#FAFAFA;
+    --bc03:#FFFFFF;
+    --bc04:#949393;
+    --bc05:#545454;
+    --tc01:#0F3B56;
+    --tc02:#942525;
+    --tc03:#0f225644;
+    --tc04:#1be908;
+    --tc05:#ff0000;
+    --tc06:#FFFFFF;
+    --ts01:#0F3B56;
+}
+
+/* shadow */
+
+.tshadow {
+    text-shadow: 0px 3px 6px #0F3B56;
+}
+
+/* Background colors*/
+
+.bcolor_1 {
+    background-color: #F5F5F5;
+}
+.bcolor_2 {
+    background-color: #FAFAFA;
+}
+.bcolor_3 {
+    background-color: #FFFFFF;
+}
+.bcolor_4 {
+    background-color: #949393;
+}
+.bcolor_5 {
+    background-color: #545454;
+}
+
+/* Text colors */
+
+.tcolor_1 {
+    color: #0F3B56;
+}
+.tcolor_2 {
+    color: #942525;
+}
+.tcolor_3 {
+    color: #0f3b56a4;
+}
+.tcolor_4 {
+    color: #1be908;
+}
+.tcolor_5 {
+    color: #ff0000;
+}
+.tcolor_6 {
+    color: #FFFFFF;
+}
+
+/* background */
+
+body {
+    background-color: var(--bc01);
+}
+
+main {
+    background-color: var(--bc02);
+    box-shadow: 0 6px 10px var(--tc03)
+}
+
+/* Nav */
+
+li a {
+    color: var(--tc01);
+}

@@ -1,0 +1,38 @@
+/* All the content and featured image*/
+
+.blog_content {
+    max-width: 800px;
+    margin: auto;
+    color: var(--tc01)
+}
+
+.ft_img {
+    width: 100%;
+    height: auto;
+}
+
+/* main content text and image */
+
+figure img {
+    width: 100%;
+    height: auto;
+}
+
+figure {
+    margin: 16px 26px 0px 0px;
+}
+
+.blog_main_content {
+    padding: 20px;
+    box-shadow: 0 5px 10px var(--tc03);
+    background-color: var(--bc03);
+}
+
+.wp-block-media-text {
+    display:flex;
+    margin-top: 50px;
+}
+
+.wp-block-media-text__content {
+    width: 100%;
+}
