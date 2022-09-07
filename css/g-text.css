@@ -1,13 +1,13 @@
 :root {
-    --ft01: eds-market-wide,sans-serif;
+    --ft01: good-karma-smooth-wideup,sans-serif;
     --ft02: ff-uberhand-text-pro,sans-serif;
 }
 
 /* imported fonts */
 
 .font_1 {
-    font-family: eds-market-wide,sans-serif;
-    font-weight: 400;
+    font-family: good-karma-smooth-wideup,sans-serif;
+    font-weight: 700;
     font-style: normal;
 }
 .font_2 {
@@ -20,22 +20,19 @@
 /* headers */
 
 h1 {
-    font-size: 30px;
+    font-size: 50px;
 }
 h2 {
     font-size: 40px;
+    font-weight: 400;
 }
+
 h3 {
-
-}
-h4 {
-
-}
-h5 {
-
+    font-size: 30px;
+    font-weight: 400;
 }
 
-/* Nav */
+/* Header */
 
 nav li {
     font-size: 25px;

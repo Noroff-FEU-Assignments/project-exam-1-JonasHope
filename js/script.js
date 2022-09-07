@@ -10,7 +10,7 @@ async function getData(){
     }
     
     catch(error){
-        console.log(error, "yeah, that didnt work");
+        console.log(error, "An error occurred!");
     }
 };
 
@@ -34,7 +34,7 @@ function createHTML(homeSlider){
         slider.innerHTML +=
         
         `<div class="slider_card">
-            <img class="slider_img" src="${sliderData._embedded['wp:featuredmedia']['0'].source_url}" class="ft_img"></img>
+            <div class="slider_img" style="background-image: url('${sliderData._embedded['wp:featuredmedia']['0'].source_url}')"></div>
             <h3 class="font_2">${sliderData.title.rendered}</h3>
         </div>`
     })
