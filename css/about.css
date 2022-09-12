@@ -1,0 +1,35 @@
+.about_content {
+    color: var(--tc01);
+    font-family: var(--ft02);
+    letter-spacing: 1px;
+    line-height: 24px;
+    display:flex;
+    margin: 50px auto;
+}
+
+.about_container {
+    padding: 50px
+}
+
+.about_text {
+    max-width: 50%;
+    display:flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin: 20px;
+    padding: 0 50px;
+    background-color: var(--bc03);
+    box-shadow: 0 5px 10px var(--tc03);
+
+}
+
+.about_img_container {
+    padding: 20px;
+}
+
+.about_img {
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    width: 300px;
+}

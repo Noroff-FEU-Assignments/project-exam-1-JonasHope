@@ -4,12 +4,13 @@ main {
     max-width: 1280px;
     margin: auto;
     padding: 1px;
-    min-height: 100vh
+    min-height: 80vh
 }
 
 .content_width {
     max-width: 1000px;
-    margin:auto;
+    margin: auto;
+    padding: 1px;
 }
 
 /* Header */
@@ -19,8 +20,14 @@ header {
     margin:auto;
 }
 
-.logo_header {
+.hopes_journey {
+    max-width: 300px;
+}
+
+.logo_header h1 {
+    padding: 20px;
     margin: 40px 0px;
+    max-width: 300px;
 }
 
 .navigation ul {

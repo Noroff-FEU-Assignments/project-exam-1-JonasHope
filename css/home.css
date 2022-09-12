@@ -13,6 +13,7 @@
     min-height: 40vh;
     background-position-y: bottom, center;
     display:flex;
+    align-items: center;
 }
 
 .home_img h2 {
@@ -22,8 +23,6 @@
     font-size: 30px;
     color: var(--tc06);
     font-family: var(--ft02);
-    display:flex;
-    align-items: center;
 }
 
 /* Slider */
@@ -31,11 +30,11 @@
 .slider_header {
     color: var(--tc01);
     font-family: var(--ft02);
-    margin-top: 100px;
+    margin-top: 10vh;
 }
 
 .slider_header h3 {
-    margin: 0px;
+    margin-left: 10px ;
 }
 
 .slider_container {
@@ -66,13 +65,15 @@
     font-size: 50px;
     color: var(--tc01);
     margin: 10px;
+    cursor: pointer;
 }
 
 .slider::-webkit-scrollbar {
-    height: 5px;
-    width: 2px;
+    height: 15px;
     border: 10px solid var(--tc03);
+    border-radius: 10px;
 }
+
 
 .slider::-webkit-scrollbar-thumb {
     background-color: var(--tc01);

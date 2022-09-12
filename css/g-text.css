@@ -20,7 +20,7 @@
 /* headers */
 
 h1 {
-    font-size: 50px;
+    font-size: 40px;
 }
 h2 {
     font-size: 40px;
@@ -32,9 +32,8 @@ h3 {
     font-weight: 400;
 }
 
-/* Header */
-
-nav li {
-    font-size: 25px;
-    letter-spacing: 3px;
+.head_01 h1 {
+    font-family: var(--ft02);
+    color: var(--tc01);
+    margin-top: 60px;
 }

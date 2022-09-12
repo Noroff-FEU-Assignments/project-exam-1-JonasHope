@@ -1,7 +1,30 @@
 @import url("./g-colors.css");
-@import url("./g-footer.css");
-@import url("./g-header.css");
 @import url("./g-text.css");
-@import url("./g-images.css");
 @import url("./g-width_space.css");
-@import url("./g-header_footer.css")
+@import url("./g-header_footer.css");
+
+/* Loader - inspiration from https://cssloaders.github.io/ */
+
+.loading_icon {
+    border-radius: 50%;
+    border-top: 5px solid var(--tc01);
+    border-right: 5px solid transparent;
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    -webkit-animation: rotation 1s linear infinite;
+    animation: rotation 1s linear infinite;
+    margin: 50px auto;
+}
+
+@keyframes rotation {
+  0% { 
+    transform: rotate(0deg); 
+  }
+  100% { transform: rotate(360deg); 
+  }
+}
+
+.remove {
+    display:none;
+}

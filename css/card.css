@@ -1,0 +1,38 @@
+.card_container {
+    display:flex;
+    margin: auto;
+    flex-direction: column;
+}
+
+.card_img {
+    background-size: cover;
+    min-height: 300px;
+    min-width: 333px;
+}
+
+.blog_posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px auto;
+}
+
+.card {
+    background-color: var(--bc03);
+    box-shadow: 0 5px 10px var(--tc03);
+    text-align: center;
+    transform: scale(.95);
+    margin: 20px auto;
+}
+
+/* View more button */
+
+.view_more {
+    font-size: 30px;
+    text-align: center;
+    color: var(--tc01);
+    font-family: var(--ft02);
+    margin: 20px auto 50px auto;
+    text-decoration: underline;
+    cursor: pointer;
+}
