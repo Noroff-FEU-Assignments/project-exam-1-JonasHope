@@ -21,6 +21,7 @@
 
 h1 {
     font-size: 40px;
+    font-weight: 400;
 }
 h2 {
     font-size: 40px;
@@ -36,4 +37,8 @@ h3 {
     font-family: var(--ft02);
     color: var(--tc01);
     margin-top: 60px;
+}
+
+main {
+    font-family: var(--ft02);
 }

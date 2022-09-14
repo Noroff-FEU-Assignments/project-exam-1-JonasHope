@@ -28,3 +28,15 @@
 .remove {
     display:none;
 }
+
+.back_container {
+  padding: 20px;
+  margin:0px;
+  width: 30px;
+  color: var(--tc01);
+  cursor: pointer;
+}
+
+.back_btn {
+  font-size: 30px;
+}

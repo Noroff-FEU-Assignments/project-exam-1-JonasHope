@@ -1,7 +1,6 @@
 /* All the content and featured image*/
 
 .blog_content {
-    max-width: 800px;
     margin: 70px auto;
     color: var(--tc01);
 }
@@ -22,7 +21,7 @@ hr {
 /* main content text and image */
 
 figure img {
-    width: 100%;
+    max-width: 680px;
     height: auto;
 }
 
@@ -30,7 +29,10 @@ figure img {
     padding: 40px 20px;
     box-shadow: 0 5px 10px var(--tc03);
     background-color: var(--bc03);
-    margin-top: 40px;
+    margin: 40px auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center
 }
 
 .blog_main_content p {

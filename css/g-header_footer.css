@@ -14,6 +14,10 @@ nav li {
     justify-content: flex-end;
 }
 
+.hamburger {
+    display:none;
+}
+
 /* Footer */
 
 footer {
@@ -24,4 +28,51 @@ footer {
     font-size: 16px;
     letter-spacing: 1px;
     line-height: 24px;
+}
+
+@media (max-width: 1000px) {
+
+    /* Hamburger menu */
+    
+    .navigation {
+        display: none;
+        position: relative;
+        top: -126px;
+        right: -18px;
+    }
+    
+    .navigation ul {
+        flex-direction: column;
+        position: absolute;
+        background-color: var(--tc02);
+        right: 18px;
+        top: 110px;
+    }
+
+    .navigation a {
+        color: var(--tc06);
+    }
+
+    .hamburger {
+        display:flex;
+        justify-content: flex-end;
+        padding: 10px;
+        font-size: 30px;
+        color: var(--tc02);
+        position: absolute;
+        top: 50px;
+        right: 20px;
+    }
+
+    /* logo */
+
+    .navigation li {
+        padding: 25px 50px;
+    }
+
+    .hopes_journey {
+        max-width: 100%;
+        display:flex;
+        justify-content: center;
+    }
 }

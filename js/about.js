@@ -1,10 +1,9 @@
-const sliderHeader = document.querySelector(".slider_header");
 const url = "https://rd-products.site/wp-json/wp/v2/pages/100?_embed";
 const aboutContainer = document.querySelector(".about_container");
 const loader = document.querySelector(".loading_icon")
 
 
-    /* API Fetch Slider */
+    /* API Fetch About page */
 
 async function getData(){
     try{

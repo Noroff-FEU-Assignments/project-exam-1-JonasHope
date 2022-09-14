@@ -29,7 +29,7 @@ getData();
 
 function createHTML(blogData){
     post.innerHTML =
-            `<div class="blog_content font_2">
+            `<div class="blog_content content_width font_2">
                 <h1 class="font_2">${blogData.title.rendered}</h1>
                 <hr>
                 <img src="${blogData._embedded['wp:featuredmedia']['0'].source_url}" class="ft_img" alt="${blogData.title.rendered}"></img>
