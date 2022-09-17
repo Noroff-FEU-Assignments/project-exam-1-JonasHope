@@ -22,7 +22,7 @@ nav li {
 
 footer {
     text-align: center;
-    padding: 40px;
+    padding-top: 20px;
     color: var(--tc01);
     font-family: var(--ft02);
     font-size: 16px;

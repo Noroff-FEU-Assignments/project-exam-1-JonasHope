@@ -9,26 +9,31 @@ contactContainer.innerHTML +=
         <p>You have successfully sent a message</p>
         </div>
             <form>
+
                 <div class="label_container">
                     <label for="name">Full Name</label>
                     <div id="name-error" class="error">Please enter your full name</div>
                 </div>
                 <input type="text" name="name" id="name">
+                
                 <div class="label_container">
                     <label for="email">Email</label>
                     <div id="email-error" class="error">Enter a valid email</div>
                 </div>
                 <input type="email" name="email" id="email"></input>
+
                 <div class="label_container">
                     <label>Subject</label>
                     <div id="subject-error" class="error">Minimum length of 15</div>
                 </div>
                 <input type="subject" name="subject" id="subject"></input>
+
                 <div class="label_container">
                     <label>Message</label>
                     <div id="text-error" class="error">Minimum length of 25</div>
                 </div>
                 <textarea type="textarea" name="textarea" id="textarea" rows="10" cols="50"></textarea>
+                
                 <button class="submit_btn" id="submitbtn">Submit</button>
             </form>               
         </div>
@@ -42,6 +47,7 @@ loader.classList.add("remove")
 
 const form = document.querySelector(`form`);
 const successfully = document.querySelector(`.successfully`)
+const button = document.querySelector(".submit_btn")
 
 const fullName = document.querySelector(`#name`);
 const nameError = document.querySelector(`#name-error`);
@@ -54,6 +60,8 @@ const emailError = document.querySelector(`#email-error`);
 
 const textArea = document.querySelector(`#textarea`);
 const textError = document.querySelector(`#text-error`);
+
+
 
 function formCheck(event) {
     event.preventDefault();
@@ -82,10 +90,10 @@ function formCheck(event) {
         textError.style.display = "block";
     };
 
-    if (check(fullName.value, 0) && check(subject.value, 10) && checkEmail(email.value) && check(textArea.value, 25)) {
-    textArea.value = ""
-    subject.value = ""
-    successfully.style.display = "block"
+    if (check(fullName.value, 5) && check(subject.value, 15) && checkEmail(email.value) && check(textArea.value, 25)) {
+        textArea.value = ""
+        subject.value = ""
+        successfully.style.display = "block"
     };
 };
 

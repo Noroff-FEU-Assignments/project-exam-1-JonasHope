@@ -33,3 +33,22 @@
     height: 500px;
     width: 300px;
 }
+
+@media (max-width: 900px) {
+
+    .about_content {
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+    }
+
+    .about_container, .about_text {
+        padding:20px;
+        margin: auto;
+        max-width: 600px;
+    }
+
+    main {
+        padding: 0px;
+    }
+}

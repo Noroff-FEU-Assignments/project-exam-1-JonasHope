@@ -1,22 +1,22 @@
 .contact_container {
     display: flex;
-    margin: 50px;
+    margin: auto;
 }
 
 .contact_content h1 {
-    padding-left: 40px;
+    padding-left: 10px;
     margin-bottom: 0px;
 }
 
 .contact_content {
-    padding: 30px 100px;
+    padding: 40px;
     background-color: var(--bc03);
     box-shadow: 0 5px 10px var(--tc03);
     color: var(--tc01);
 }
 
 .contact_form {
-    padding: 40px;
+    padding: 40px 10px;
 }
 
 .contact_form p {
@@ -30,7 +30,7 @@ form input[type=subject], form input[type=text], form input[type=email], form te
     background-color: var(--bc01);
     padding: 12px;
     margin: 20px 0px;
-    width: 400px;
+    width: 90%;
 }
 
 .submit_btn {
@@ -44,6 +44,7 @@ form input[type=subject], form input[type=text], form input[type=email], form te
     width: 50%;
     margin: auto;
     cursor: pointer;
+    color: var(--tc01);
 }
 
 .label_container {
@@ -63,4 +64,14 @@ form input[type=subject], form input[type=text], form input[type=email], form te
     padding:10px 0px;
     margin:10px auto;
     display:none
+}
+
+@media (max-width: 700px) {
+    main {
+        padding: 10px;
+    }
+
+    .contact_content {
+        padding: 10px;
+    }
 }

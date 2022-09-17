@@ -23,17 +23,22 @@ async function getData(url){
 
 getData(mainUrl)
 
-overskrift.innerHTML = "<h1>All my blogs</h1>"
+overskrift.innerHTML = `<div>
+                            <h1>All my blogs</h1>
+                            <hr>
+                        </div>`
 
 function createHTML(blogPosts){
     blogPosts.forEach(function(blogData){
         allBlogs.innerHTML +=
 
             `<a href="post-specific.html?id=${blogData.id}" class="card">
-                <div class="card_img" style="background-image:
-                    url('${blogData._embedded['wp:featuredmedia']['0'].source_url}')" alt="${blogData.title.rendered}">
+                <div class="card_img" 
+                    style="background-image: url('${blogData._embedded['wp:featuredmedia']['0'].source_url}')" alt="${blogData.title.rendered}">
                 </div>
                 <h3 class="font_2">${blogData.title.rendered}</h3>
+                <hr>
+                <p>${blogData.date}</p>
             </a>`;
 
         loader.classList.add("remove")

@@ -32,6 +32,7 @@ function createHTML(blogData){
             `<div class="blog_content content_width font_2">
                 <h1 class="font_2">${blogData.title.rendered}</h1>
                 <hr>
+                <p class="date">${blogData.date}</p>
                 <img src="${blogData._embedded['wp:featuredmedia']['0'].source_url}" class="ft_img" alt="${blogData.title.rendered}"></img>
                 <div class="blog_main_content" alt="${blogData.title.rendered}">${blogData.content.rendered}</div>
             </div>`

@@ -9,8 +9,8 @@
 .home_img {
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 50vh;
-    background-position-y: bottom, center;
+    min-height: 500px;
+    background-position: bottom center;
     display:flex;
     align-items: center;
 }

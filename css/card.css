@@ -25,6 +25,11 @@
     margin: 20px auto;
 }
 
+.card hr {
+    max-width: 80%;
+    border: 1px solid var(--tc01);
+}
+
 /* View more button */
 
 .view_more {
@@ -35,4 +40,17 @@
     margin: 20px auto 50px auto;
     text-decoration: underline;
     cursor: pointer;
+}
+
+@media (max-width: 700px) {
+
+    .card_img{
+        min-height: 200px;
+        min-width: 250px;
+    }
+
+    .head_01 {
+        text-align: center;
+    }
+
 }

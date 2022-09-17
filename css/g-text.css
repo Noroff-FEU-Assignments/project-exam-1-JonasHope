@@ -17,6 +17,11 @@
     line-height: 24px;
 }
 
+@font-face {
+    font-family: "indie";
+    src: url("../font/IndieFlower-Regular.ttf") format("truetype")
+}
+
 /* headers */
 
 h1 {
