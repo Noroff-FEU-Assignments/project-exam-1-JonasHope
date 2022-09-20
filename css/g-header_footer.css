@@ -18,7 +18,7 @@ nav li {
     display:none;
 }
 
-/* Footer */
+/*-- Footer --*/
 
 footer {
     text-align: center;
@@ -30,13 +30,41 @@ footer {
     line-height: 24px;
 }
 
+/*-- Hover --*/
+
+nav a:hover {
+    background-color: var(--tc01);
+    color: var(--bc01);
+}
+
 @media (max-width: 1000px) {
 
-    /* Hamburger menu */
+    /*-- Hamburger menu --*/
+
+    nav a {
+        background-image: linear-gradient(var(--tc06), var(--tc06));
+        background-size: 0% 0.1em;
+        background-position-y: 100%;
+        background-position-x: 50% ;
+        background-repeat: no-repeat;
+        transition: background-size 0.3s ease-in-out;
+    }
+
+    nav a:hover {
+        background-color: var(--tc02);
+        color: var(--tc06);
+    }
+
+    nav a:hover,
+    nav a:focus,
+    nav a:active {
+        background-size: 100% 0.1em;
+    }
     
     .navigation {
         display: none;
         position: relative;
+        z-index: 9999;
         top: -126px;
         right: -18px;
     }
@@ -47,6 +75,7 @@ footer {
         background-color: var(--tc02);
         right: 18px;
         top: 110px;
+        padding: 10px;
     }
 
     .navigation a {
@@ -67,7 +96,7 @@ footer {
     /* logo */
 
     .navigation li {
-        padding: 25px 50px;
+        padding: 10px 25px;
     }
 
     .hopes_journey {

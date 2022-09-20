@@ -23,6 +23,11 @@
     text-align: center;
     transform: scale(.95);
     margin: 20px auto;
+    transition: 0.5s
+}
+
+.card p {
+    font-family: var(--ft02);
 }
 
 .card hr {

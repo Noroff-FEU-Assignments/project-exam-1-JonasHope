@@ -17,9 +17,9 @@
 
 .home_img h1 {
     max-width: 400px;
-    font-size: 30px;
+    font-size: 25px;
     padding:5vw;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     color: var(--tc06);
     font-family: var(--ft02);
 }
@@ -52,17 +52,20 @@
 .slider {
     display: flex;
     overflow-x: auto;
+    padding-bottom:20px;
 }
 
 .slider_card {
     background-color: var(--bc03);
-    box-shadow: 0 5px 10px var(--tc03);
+    box-shadow: 0 3px 6px var(--tc03);
     text-align: center;
     transform: scale(.95);
+    transition: 0.5s
 }
 
 .slider_card h3 {
-    font-size: 20px;
+    font-size: 23px;
+    letter-spacing: 2px;
 }
 
 

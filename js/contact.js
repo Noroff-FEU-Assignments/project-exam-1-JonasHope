@@ -10,29 +10,37 @@ contactContainer.innerHTML +=
         </div>
             <form>
 
-                <div class="label_container">
+                <div class="input_container">
                     <label for="name">Full Name</label>
-                    <div id="name-error" class="error">Please enter your full name</div>
+                    <input type="text" name="name" id="name">
+                    <div class="error_msg">
+                        <div id="name-error" class="error">Please enter your full name</div>
+                    </div>
                 </div>
-                <input type="text" name="name" id="name">
                 
-                <div class="label_container">
+                <div class="input_container">
                     <label for="email">Email</label>
-                    <div id="email-error" class="error">Enter a valid email</div>
+                    <input type="email" name="email" id="email"></input>
+                    <div class="error_msg">
+                        <div id="email-error" class="error">Enter a valid email</div>
+                    </div>
                 </div>
-                <input type="email" name="email" id="email"></input>
 
-                <div class="label_container">
+                <div class="input_container">
                     <label>Subject</label>
-                    <div id="subject-error" class="error">Minimum length of 15</div>
+                    <input type="subject" name="subject" id="subject"></input>
+                    <div class="error_msg">
+                        <div id="subject-error" class="error">Minimum length of 15</div>
+                    </div>
                 </div>
-                <input type="subject" name="subject" id="subject"></input>
 
-                <div class="label_container">
+                <div class="input_container">
                     <label>Message</label>
-                    <div id="text-error" class="error">Minimum length of 25</div>
+                    <textarea type="textarea" name="textarea" id="textarea" rows="10" cols="50"></textarea>
+                    <div class="error_msg">
+                        <div id="text-error" class="error">Minimum length of 25</div>
+                    </div>
                 </div>
-                <textarea type="textarea" name="textarea" id="textarea" rows="10" cols="50"></textarea>
                 
                 <button class="submit_btn" id="submitbtn">Submit</button>
             </form>               

@@ -29,7 +29,7 @@ form input[type=subject], form input[type=text], form input[type=email], form te
     border-bottom: 2px solid var(--tc01);
     background-color: var(--bc01);
     padding: 12px;
-    margin: 20px 0px;
+    margin: 20px 0px 2px 0px;
     width: 90%;
 }
 
@@ -38,23 +38,30 @@ form input[type=subject], form input[type=text], form input[type=email], form te
     padding: 25px;
     letter-spacing: 1px;
     font-size: 16px;
-    background-color: var(--bc01);
+    background-color: var(--tc02);
     display:flex;
     justify-content: center;
     width: 50%;
     margin: auto;
     cursor: pointer;
-    color: var(--tc01);
+    color: var(--tc06);
 }
 
 .label_container {
     display:flex;
-    justify-content: space-between;
+    justify-content: space-between
 }
+
 
 .error {
     color: var(--tc05);
     display:none;
+}
+
+.error_msg {
+    display:flex;
+    justify-content: flex-end;
+    margin: 0px 22px 20px 0px;
 }
 
 .successfully {

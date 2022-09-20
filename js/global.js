@@ -16,10 +16,10 @@ header.innerHTML =
         <div class="navigation font_2">
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="posts.html">Blogs</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="index.html" class="nav_link">Home</a></li>
+                    <li><a href="posts.html" class="nav_link">Blogs</a></li>
+                    <li><a href="about.html" class="nav_link">About</a></li>
+                    <li><a href="contact.html" class="nav_link">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -37,19 +37,8 @@ function hamburgerMenu() {
 
     /* Footer */
 
-/*const footer = document.createElement(`footer`)
-const footerElement = document.createElement(`p`);
-const footerContent = document.createTextNode(`© Copyright 2022 Jonas Hope All Rights Reserved`);
-footer.appendChild(footerElement)
-footerElement.appendChild(footerContent);
-const footerMain = document.querySelector(`footer`);
-document.body.insertBefore(footer, footerMain);
-*/
-
 const test = document.createElement("footer")
 const p = document.createElement(`p`);
-
-/* p.setAttribute(`href`, "index.html"); */
 
 test.appendChild(p)
 p.innerText = "© Copyright 2022 Jonas Hope All Rights Reserved";

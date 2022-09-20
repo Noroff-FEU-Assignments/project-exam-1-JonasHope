@@ -47,7 +47,7 @@ function createHTML(homeSlider, ftImage){
         slider.innerHTML +=
             `<a href="post-specific.html?id=${sliderData.id}" class="slider_card">
                 <div class="slider_img" style="background-image: url('${sliderData._embedded['wp:featuredmedia']['0'].source_url}')" alt="${sliderData.title.rendered}"></div>
-                <h3 class="font_2">${sliderData.title.rendered}</h3>
+                <h3 class="font_02">${sliderData.title.rendered}</h3>
             </a>`
                             
     loader.classList.add("remove");

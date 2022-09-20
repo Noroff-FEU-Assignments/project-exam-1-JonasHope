@@ -7,8 +7,8 @@
     --bc04:#949393;
     --bc05:#545454;
     --tc01:#0F3B56;
-    --tc02:#942525;
-    --tc03:#0f225644;
+    --tc02:#782525;
+    --tc03:#0f22561f;
     --tc04:#0ea400;
     --tc05:#ff0000;
     --tc06:#FFFFFF;
@@ -44,7 +44,7 @@
     color: #0F3B56;
 }
 .tcolor_2 {
-    color: #942525;
+    color: #782525;
 }
 .tcolor_3 {
     color: #0f3b56a4;
@@ -67,5 +67,5 @@ body {
 
 main {
     background-color: var(--bc02);
-    box-shadow: 0 6px 10px var(--tc03)
+    box-shadow: 0 3px 6px var(--tc03)
 }

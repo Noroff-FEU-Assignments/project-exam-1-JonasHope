@@ -40,3 +40,9 @@
 .back_btn {
   font-size: 30px;
 }
+
+.slider_card:hover, .card:hover {
+    transform:scale(1);
+    transition-timing-function: ease;
+    box-shadow: 0 6px 12px;
+}
