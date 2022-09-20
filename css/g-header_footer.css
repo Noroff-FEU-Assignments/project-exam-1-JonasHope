@@ -37,6 +37,7 @@ nav a:hover {
     color: var(--bc01);
 }
 
+
 @media (max-width: 1000px) {
 
     /*-- Hamburger menu --*/
@@ -62,7 +63,6 @@ nav a:hover {
     }
     
     .navigation {
-        display: none;
         position: relative;
         z-index: 9999;
         top: -126px;

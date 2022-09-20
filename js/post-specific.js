@@ -42,11 +42,13 @@ function createHTML(blogData){
     modalDiv.innerHTML = 
         `<div class="modal-content modal_width"
             alt="${blogData.title.rendered}">
+            <span class="close">&times;</span>
             ${blogData.content.rendered}
         </div>`
 
     modalFt.innerHTML = 
         `<div class="modal-content modal_width">
+            <span class="close">&times;</span>
             <img src="${blogData._embedded['wp:featuredmedia']['0'].source_url}" class="ft_img alt="${blogData.title.rendered}"></img>
         </div>`
 
@@ -63,7 +65,13 @@ function createHTML(blogData){
     modal.style.display = "none"
 
     image.onclick = function() {
-        modal.style.display = "block";  
+        modal.style.display = "block";
+
+            window.addEventListener("click", function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        })
     }
 
 /*-------------- Modal 2 --------------*/
@@ -77,9 +85,8 @@ function createHTML(blogData){
     modalFeat.style.display = "block";  
 
         window.addEventListener("click", function(event) {
-            if (event.target == modalFeat || event.target == modal) {
+            if (event.target == modalFeat) {
                 modalFeat.style.display = "none";
-                modal.style.display = "none";
             }
         })
     }
