@@ -9,7 +9,7 @@
 .home_img {
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 300px;
+    min-height: 400px;
     background-position: bottom center;
     display:flex;
     align-items: center;
@@ -18,10 +18,29 @@
 .home_img h1 {
     max-width: 400px;
     font-size: 25px;
-    padding:5vw;
+    padding:5vw 1vw;
     letter-spacing: 2px;
     color: var(--tc06);
     font-family: var(--ft02);
+}
+
+.home_ft_p {
+    max-width: 500px;
+    margin: 10vh auto;
+    padding: 30px;
+    line-height: 21px;
+    letter-spacing: 1px;
+}
+
+.home_ft_p h2 {
+    text-align: center;
+    margin-top: 10px
+}
+
+.home_ft_container {
+    color: var(--tc01);
+    background-color: var(--bc03);
+    box-shadow: 0 5px 10px var(--tc03);
 }
 
 /* Slider */
@@ -29,7 +48,6 @@
 .slider_header {
     color: var(--tc01);
     font-family: var(--ft02);
-    margin-top: 10vh;
 }
 
 .slider_header h3 {
@@ -45,8 +63,8 @@
 
 .slider_img {
     background-size: cover;
-    min-height: 250px;
-    min-width: 333px;
+    min-height: 200px;
+    min-width: 250px;
 }
 
 .slider {
@@ -121,7 +139,7 @@
 
 }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
 
     .slider_container {
         max-width: 300px;
@@ -129,6 +147,10 @@
 
     main {
         padding: 10px;
+    }
+
+    .home_img {
+        min-height:300px;
     }
 
 }

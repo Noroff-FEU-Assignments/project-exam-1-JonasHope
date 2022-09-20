@@ -41,6 +41,11 @@ function createHTML(homeSlider, ftImage){
         `<div class="content_width tshadow home_img"
         style="background-image: url('${ftImage._embedded['wp:featuredmedia']['0'].source_url}')" alt="Featured Image, turtle">
             <h1>${ftImage.title.rendered}</h1>
+        </div>
+        <div class="home_ft_container content_width">
+            <div class="home_ft_p">
+                <p>${ftImage.content.rendered}</p>
+            </div>
         </div>`
 
     homeSlider.forEach(function(sliderData){
@@ -58,11 +63,11 @@ function createHTML(homeSlider, ftImage){
     /* Arrow functions for slider */
 
 slideLeft.onclick = function(){
-    sliderContainer.scrollLeft -= 999;
+    sliderContainer.scrollLeft -= 500;
 }
 
 slideRight.onclick = function(){
-    sliderContainer.scrollLeft += 999;
+    sliderContainer.scrollLeft += 500;
 }
 
 
