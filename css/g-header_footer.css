@@ -63,6 +63,7 @@ nav a:hover {
     }
     
     .navigation {
+        display: none;
         position: relative;
         z-index: 9999;
         top: -126px;
