@@ -1,7 +1,7 @@
 .card_img {
     background-size: cover;
     background-position: center;
-    min-height: 300px;
+    min-height: 270px;
     min-width: 350px;
 }
 
@@ -21,7 +21,7 @@
 }
 
 .card_text {
-    padding: 10px;
+    padding: 20px;
 }
 
 .card_text h3 {
