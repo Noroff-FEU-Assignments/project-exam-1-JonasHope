@@ -5,14 +5,12 @@
 
 .contact_content h1 {
     padding-left: 10px;
-    margin-bottom: 0px;
 }
 
 .contact_content {
     padding: 40px;
-    background-color: var(--bc03);
-    box-shadow: 0 5px 10px var(--tc03);
-    color: var(--tc01);
+    color: var(--c02);
+    font-family: var(--ft01);
 }
 
 .contact_form {
@@ -26,8 +24,8 @@
 
 form input[type=subject], form input[type=text], form input[type=email], form textarea {
     border: none;
-    border-bottom: 2px solid var(--tc01);
-    background-color: var(--bc01);
+    border-bottom: 2px solid var(--c02);
+    background-color: var(--c05);
     padding: 12px;
     margin: 20px 0px 2px 0px;
     width: 90%;
@@ -38,13 +36,13 @@ form input[type=subject], form input[type=text], form input[type=email], form te
     padding: 25px;
     letter-spacing: 1px;
     font-size: 16px;
-    background-color: var(--tc02);
+    background-color: var(--c01);
     display:flex;
     justify-content: center;
     width: 50%;
     margin: auto;
     cursor: pointer;
-    color: var(--tc06);
+    color: var(--c05);
 }
 
 .label_container {
@@ -54,7 +52,7 @@ form input[type=subject], form input[type=text], form input[type=email], form te
 
 
 .error {
-    color: var(--tc05);
+    color: var(--c08);
     display:none;
 }
 
@@ -65,12 +63,15 @@ form input[type=subject], form input[type=text], form input[type=email], form te
 }
 
 .successfully {
-    color: var(--tc06);
-    background-color: var(--tc04);
+    background-color: var(--c07);
     text-align: center;
     padding:10px 0px;
     margin:10px auto;
     display:none
+}
+
+.successfully p {
+    color: var(--c05);
 }
 
 @media (max-width: 700px) {

@@ -1,0 +1,59 @@
+:root {
+    --ft01: nimbus-sans,sans-serif;
+    --ft02: good-karma-smooth-wide,sans-serif;
+}
+
+.font_1 {
+    font-family: nimbus-sans,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.font_2 {
+    font-family: good-karma-smooth-wideup,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 3rem;
+    font-family: nimbus-sans,sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: var(--c02)
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-family: nimbus-sans,sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: var(--c02)
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-family: nimbus-sans,sans-serif;
+    font-weight: 400;
+    color: var(--c01)
+}
+
+h4 {
+    font-size: 2rem;
+    font-family: nimbus-sans,sans-serif;
+    color: var(--c02)
+}
+
+h5 {
+    font-size: 1.3rem;
+    font-family: nimbus-sans,sans-serif;
+    color: var(--c03)
+}
+
+p {
+    font-family: nimbus-sans,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.1rem;
+    color: var(--c03)
+}

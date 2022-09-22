@@ -1,19 +1,13 @@
-/* All the content and featured image*/
+/*---- All the content ----*/
 
 .blog_content {
-    margin: 70px auto;
-    color: var(--tc01);
-    font-size: 18px;
+    max-width: 60%;
+    background-color: var(--c05);
 }
 
 .ft_img {
     width: 100%;
-    height: auto;
-}
-
-.blog_content h1 {
-    margin: 20px auto;
-    font-size: 48px;
+    max-height: auto;
 }
 
 hr {
@@ -24,9 +18,22 @@ hr {
     display: flex;
     justify-content: flex-end;
     font-size: 16px;
+    padding-bottom: 25px;
 }
 
-/* main content text and image */
+.specific_post {
+    display:flex;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.blog_header_content {
+    max-width: 30%;
+    padding: 30px;
+    max-height: 370px;
+}
+
+/*---- main content text and image ----*/
 
 .blog_main_content {
     padding: 40px 20px;
@@ -63,9 +70,10 @@ img {
     cursor: pointer;
 }
 
-/* Modal */
+/*---- Modal ----*/
 
-.modal-content p{
+.modal-content p,
+.modal-content h3{
     display:none;
 }
 

@@ -1,0 +1,48 @@
+/*---- header ----*/
+
+a, li {
+    text-decoration: none;
+    list-style: none;
+}
+
+.header_container {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+}
+
+.logo_container {
+    color:var(--c01);
+    font-family: var(--ft02);
+    font-size: 2rem;
+}
+
+/*---- nav ----*/
+
+.nav_container ul {
+    display:flex;
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav_container a {
+    padding: 20px;
+    color: var(--c03);
+    font-family: var(--ft01);
+}
+
+/* ---- hamburger ----*/
+
+.hamburger_container {
+    display: none;
+}
+
+/*----footer----*/
+
+footer {
+    text-align: center;
+    margin: 50px;
+}

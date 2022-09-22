@@ -1,5 +1,3 @@
-    /* Variables */
-
 const post = document.querySelector(".specific_post")
 const loader = document.querySelector(".loading_icon")
 const modalDiv = document.querySelector(".modal")
@@ -31,10 +29,14 @@ getData();
 
 function createHTML(blogData){
     post.innerHTML =
-        `<div class="blog_content content_width font_02">
+        `<div class="blog_header_content layer">
             <h1 class="font_2">${blogData.title.rendered}</h1>
+            <p>${blogData.excerpt.rendered}
             <hr>
             <p class="date">${blogData.date}</p>
+            <a href="blogs.html" class="button_01">Blog posts</a>
+        </div>
+        <div class="blog_content">
             <img src="${blogData._embedded['wp:featuredmedia']['0'].source_url}" class="ft_img" alt="${blogData.title.rendered}"></img>
             <div class="blog_main_content" alt="${blogData.title.rendered}">${blogData.content.rendered}</div>
         </div>`
