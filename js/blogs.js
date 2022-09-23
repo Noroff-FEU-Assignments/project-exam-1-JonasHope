@@ -39,7 +39,7 @@ function createHTML(blogPosts){
                     <h3>${blogData.title.rendered}</h3>
                     <p>${blogData.excerpt.rendered}</p>
                     <hr>
-                    <p>${blogData.date}</p>
+                    <p class="date">${blogData.date}</p>
                 </div>
             </a>`;
 

@@ -1,6 +1,7 @@
 .contact_container {
     display: flex;
     margin: auto;
+    height: 100vh;
 }
 
 .contact_content h1 {
@@ -29,6 +30,7 @@ form input[type=subject], form input[type=text], form input[type=email], form te
     padding: 12px;
     margin: 20px 0px 2px 0px;
     width: 90%;
+    resize: none;
 }
 
 .submit_btn {

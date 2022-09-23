@@ -29,9 +29,21 @@ a, li {
 }
 
 .nav_container a {
-    padding: 20px;
+    padding: 10px 20px;
     color: var(--c03);
     font-family: var(--ft01);
+    background-image: linear-gradient(var(--c01), var(--c01));
+    background-size: 0% 0.1em;
+    background-position-x: 50%;
+    background-position-y: 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.3s ease-in-out;
+}
+
+.nav_container a:hover,
+.nav_container a:focus,
+.nav_container a:active {
+    background-size: 100% 0.1em;
 }
 
 /* ---- hamburger ----*/
@@ -44,5 +56,7 @@ a, li {
 
 footer {
     text-align: center;
-    margin: 50px;
+    margin: auto 0px;
+    padding:10px;
+    background-color: var(--c05);
 }

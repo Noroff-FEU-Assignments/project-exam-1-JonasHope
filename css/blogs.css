@@ -1,3 +1,5 @@
+/*---- card ----*/
+
 .card_img {
     background-size: cover;
     background-position: center;
@@ -16,8 +18,13 @@
     background-color: var(--c05);
     box-shadow: 0 5px 10px var(--c09);
     margin: 20px auto;
-    transition: 0.5s;
+    transition: 0.5s ease-in-out;
     max-width: 350px;
+}
+
+.card:hover {
+    transform:scale(1.05);
+    box-shadow: 0 8px 12px var(--c06);
 }
 
 .card_text {
@@ -37,7 +44,11 @@
     padding-left:25px;
 }
 
-/* View more button */
+.date {
+    text-align: end;
+}
+
+/*---- View more button ----*/
 
 .view_more {
     text-align: center;
@@ -46,6 +57,15 @@
     cursor: pointer;
     padding-bottom: 20px;
 }
+
+.view_more h5 {
+    transition: 0.3s ease-in-out;
+}
+
+.view_more h5:hover {
+    transform: scale(1.1);
+}
+/*---- Media ----*/
 
 @media (max-width: 700px) {
 

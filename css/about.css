@@ -1,14 +1,17 @@
+main {
+    height: 100vh;
+}
+
 .about_content {
     color: var(--tc01);
     font-family: var(--ft02);
     letter-spacing: 1px;
     line-height: 24px;
     display:flex;
-    margin: 50px auto;
 }
 
 .about_container {
-    padding: 50px
+    padding: 50px;
 }
 
 .about_text {

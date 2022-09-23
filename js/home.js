@@ -55,17 +55,17 @@ function createHTML(homeSlider, ftImage, sectionCont){
         `<div class="my_blog_container">
             <div class="section_part01">
                 <h3>My blog</h3>
-               <h2>The first journey</h2>
+               <h2>The Journey is my home</h2>
                <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
             </div>
-            <div class="section_part02">
+            <div class="section_part02"><a href="post.html?id=72">
                 <img src="${sectionCont._embedded['wp:featuredmedia']['0'].source_url}" class="section_img" alt="section image ${sectionCont.title.rendered}"></img>
                 <div class="section_text">
                     <h3>New York</h3>
                     <h2>${sectionCont.title.rendered}</h2>
                     <p>${sectionCont.content.rendered}</p>
                 </div>
-            </div>
+            </a></div>
         </div>`
 
     sliderHeader.innerHTML =

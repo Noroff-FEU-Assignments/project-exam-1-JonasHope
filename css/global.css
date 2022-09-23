@@ -3,7 +3,10 @@
 @import url("./global-header_footer.css");
 
 body {
-  margin:0px;
+    margin:0px;
+    display:flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
 .layer {
@@ -22,6 +25,17 @@ body {
     background-color: var(--c01);
     border-radius: 10px;
     font-family: var(--ft01);
+    background-image: linear-gradient(#e08b5a, #e08b5a);
+    background-size: 100% 0em;
+    background-position-y: 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.25s ease-in-out;
+}
+
+.button_01:hover,
+.button_01:active,
+.button_01:focus {
+    background-size: 100% 100%;
 }
 
 /*---- loading ----*/

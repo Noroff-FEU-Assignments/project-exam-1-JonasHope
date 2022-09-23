@@ -29,18 +29,25 @@
 }
 
 .section_part01 {
-    max-width: 400px;
+    max-width: 450px;
+    margin-bottom: 60px;
 }
 
-.section_part02 {
+.section_part02 a {
     display:flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 20px;
+    margin-bottom: 40px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.section_part02 a:hover {
+    background-color: var(--c09);
+    transform:scale(1.01)
 }
 
 .section_text {
-    max-width: 500px;
     padding-left: 40px;
 }
 
@@ -60,10 +67,7 @@
     background-color: var(--c06);
 }
 
-.dot:hover {
-    background-color: var(--c03);
-}
-
+.dot:hover,
 .dot:active {
     background-color: var(--c03);
 }
@@ -71,6 +75,12 @@
 .slider_card {
     transform: scale(0.95);
     box-shadow: 0 5px 10px var(--c09);
+    transition: 0.5s ease-in-out;
+}
+
+.slider_card:hover {
+    transform: scale(0.98);
+    box-shadow: 0 5px 8px var(--c06);
 }
 
 .slider_card h3 {
@@ -110,6 +120,7 @@
 .slides {
     display: flex;
     overflow-x: auto;
+    padding-bottom: 10px;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
 }
