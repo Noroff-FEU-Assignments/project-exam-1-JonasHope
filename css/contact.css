@@ -45,6 +45,17 @@ form input[type=subject], form input[type=text], form input[type=email], form te
     margin: auto;
     cursor: pointer;
     color: var(--c05);
+    background-image: linear-gradient(var(--c07), var(--c07));
+    background-size: 100% 0em;
+    background-position-x: 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.25s ease-in-out;
+}
+
+.submit_btn:hover,
+.submit_btn:active,
+.submit_btn:focus {
+    background-size: 100% 100%;
 }
 
 .label_container {

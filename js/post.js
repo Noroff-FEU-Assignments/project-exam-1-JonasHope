@@ -55,7 +55,7 @@ function createHTML(blogData){
         </div>`
 
     document.title +=   
-        `Blog post - ${blogData.title.rendered}`
+        ` ${blogData.title.rendered}`
 
     loader.classList.add("remove")
 

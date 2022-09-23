@@ -6,8 +6,9 @@ header.innerHTML =
     `<div class="header_container">
         <div class="logo_container">
             <a href="index.html">
-                <h2">Hopes Journey</h2>
+                <h2>Hopes Journey</h2>
             </a>
+            <h3> / ${document.title}<h3>
         </div>
         <div class="hamburger_container">
             <a href="javascript:void(0);" onclick="hamburgerMenu()">
