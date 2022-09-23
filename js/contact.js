@@ -6,7 +6,8 @@ contactContainer.innerHTML +=
         <h1>Contact</h1>
         <div class="contact_form">
         <div class="successfully">
-        <p>You have successfully sent a message</p>
+        <p class="success_01">You have successfully sent a message!</p>
+        <p class="success_02">Returning to home page in 5 secounds</p>
         </div>
             <form>
 
@@ -109,6 +110,9 @@ form.addEventListener("submit", formCheck);
 
 function check(value, length) {
     if (value.trim().length > length) {
+        setTimeout(function() {
+            window.location.href = "index.html";
+        },5000);
         return true;
     } else {
         return false;

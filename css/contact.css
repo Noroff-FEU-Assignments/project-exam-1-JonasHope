@@ -83,6 +83,14 @@ form input[type=subject], form input[type=text], form input[type=email], form te
     display:none
 }
 
+.success_01 {
+    font-size: 1.2rem;
+}
+
+.success_02 {
+    font-size: 1rem;
+}
+
 .successfully p {
     color: var(--c05);
 }
