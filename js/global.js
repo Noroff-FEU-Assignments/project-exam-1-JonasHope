@@ -28,7 +28,7 @@ header.innerHTML =
     </div>`
 
 function hamburgerMenu() {
-	const menu = document.querySelector(".navigation");
+	const menu = document.querySelector(".nav_container");
 	
 	if (menu.style.display === "block") {
 	  menu.style.display = "none";
@@ -45,5 +45,5 @@ const test = document.createElement("footer")
 const p = document.createElement(`p`);
 
 test.appendChild(p)
-p.innerText = "© Copyright 2022 Jonas Hope All Rights Reserved";
+p.innerText = "© Copyright 2022 Jonas Hope";
 document.body.appendChild(test);

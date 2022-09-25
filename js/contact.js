@@ -103,6 +103,9 @@ function formCheck(event) {
         textArea.value = ""
         subject.value = ""
         successfully.style.display = "block"
+        setTimeout(function() {
+            window.location.href = "index.html";
+        },5000);
     };
 };
 
@@ -110,9 +113,6 @@ form.addEventListener("submit", formCheck);
 
 function check(value, length) {
     if (value.trim().length > length) {
-        setTimeout(function() {
-            window.location.href = "index.html";
-        },5000);
         return true;
     } else {
         return false;

@@ -1,7 +1,7 @@
 .contact_container {
     display: flex;
     margin: auto;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .contact_content h1 {
@@ -93,14 +93,4 @@ form input[type=subject], form input[type=text], form input[type=email], form te
 
 .successfully p {
     color: var(--c05);
-}
-
-@media (max-width: 700px) {
-    main {
-        padding: 10px;
-    }
-
-    .contact_content {
-        padding: 10px;
-    }
 }

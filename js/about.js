@@ -25,7 +25,8 @@ function createHTML(data){
                             `<div class="about_content content_width">
                                 <div class="about_text">
                                     <h1 class="">${data.title.rendered}</h1>
-                                    <p>${data.content.rendered}<p>
+                                    <p>${data.content.rendered}</p>
+                                    <a href="contact.html" class="button_01">Contact me</a>
                                 </div>
                                 <div class="about_img_container">
                                     <div class="about_img" style="background-image: 

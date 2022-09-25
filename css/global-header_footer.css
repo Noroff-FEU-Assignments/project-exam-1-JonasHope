@@ -74,3 +74,57 @@ footer {
     padding:10px;
     background-color: var(--c05);
 }
+
+@media (max-width: 750px) {
+    .nav_container {
+        display: none;
+        position: fixed;
+        left: 50%;
+        top: 240px;
+        transform: translate(-50%,-50%);
+        background-color: var(--c10);
+        width: 100%;
+    }
+
+    .nav_container ul {
+        flex-direction: column;
+
+    }
+
+    .nav_container li {
+        margin: 23px auto;
+    }
+
+    .nav_container a {
+        color: var(--c05);
+        padding: 15px;
+        background-image: linear-gradient(var(--c05), var(--c05));
+    }
+
+    .hamburger_container {
+        display: block;
+    }
+
+    .hamburger {
+        color:var(--c01);
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .logo_container {
+        flex-direction: column;
+    }
+
+    .logo_container h3 {
+        padding: 10px
+    }
+
+    .nav_container {
+        top: 260px;
+    }
+
+    .header_container {
+        padding-bottom: 0px;
+    }
+}

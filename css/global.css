@@ -4,9 +4,10 @@
 
 body {
     margin:0px;
-    display:flex;
-    flex-direction: column;
-    height: 100vh;
+}
+
+main {
+    min-height: 100vh;
 }
 
 .layer {
@@ -63,4 +64,10 @@ body {
 
 .remove {
     display:none;
+}
+
+@media (max-width: 500px) {
+    .content_width {
+        padding: 20px;
+    }
 }

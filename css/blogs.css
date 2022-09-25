@@ -52,7 +52,8 @@
 
 .view_more {
     text-align: center;
-    margin: auto;
+    margin: 10px auto;
+    padding-bottom: 10px;
     text-decoration: underline var(--c03);
     cursor: pointer;
     max-width: 100px;
@@ -78,6 +79,10 @@
 
     .head_01 {
         text-align: center;
+    }
+
+    .blogs_header {
+        padding-left: 0px;
     }
 
 }
