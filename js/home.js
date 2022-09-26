@@ -12,9 +12,6 @@ const sectionUrl = "https://rd-products.site/wp-json/wp/v2/pages/116?_embed";
 const sectionContent = document.querySelector(".section_content");
 
 
-
-    /* API Fetch Slider */
-
 async function getData(){
     try{
         const response = await fetch(url);

@@ -57,6 +57,7 @@ hr {
 
 .blog_main_content h3 {
     font-size: 2rem;
+    margin-top: 10px
 }
 
 .blog_main_content figure img {
@@ -119,4 +120,35 @@ img {
 
 .modal_width {
     max-width: 1200px;
+}
+
+
+@media (max-width:1350px) {
+    .scroll_arrow {
+        right:0px;
+        padding: 5px;
+    }
+}
+
+@media (max-width:800px) {
+
+    .specific_post {
+        flex-direction: column;
+    }
+
+    .blog_header_content, .blog_content {
+        max-width: 100%;
+    }
+
+    .blog_content {
+        margin: 20px 35px;
+    }
+
+    .blog_main_content h3 {
+        margin: 0px auto 10px auto;
+    }
+
+    .content_width {
+        padding: 0px;
+    }
 }

@@ -94,3 +94,7 @@ form input[type=subject], form input[type=text], form input[type=email], form te
 .successfully p {
     color: var(--c05);
 }
+
+footer {
+    background-color: var(--c05);
+}

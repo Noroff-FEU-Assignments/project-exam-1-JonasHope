@@ -72,19 +72,30 @@ footer {
     text-align: center;
     margin: auto 0px;
     padding:10px;
-    background-color: var(--c05);
+    background-color: var(--c04);
 }
+
+/*---- Media ----*/
 
 @media (max-width: 750px) {
     .nav_container {
-        display: none;
-        position: fixed;
+        position: absolute;
         left: 50%;
         top: 240px;
         transform: translate(-50%,-50%);
         background-color: var(--c10);
         width: 100%;
     }
+
+    nav {
+        padding: 10px;
+    }
+
+    .hide_nav {
+        display:none;
+    }
+
+    /*---- hamburger ----*/
 
     .nav_container ul {
         flex-direction: column;
@@ -121,7 +132,7 @@ footer {
     }
 
     .nav_container {
-        top: 260px;
+        top: 270px;
     }
 
     .header_container {

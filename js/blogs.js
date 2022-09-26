@@ -47,6 +47,8 @@ function createHTML(blogPosts){
     })
 };
 
+/*---- View more button ----*/
+
 viewMore.onclick = function() {
     const updatedUrl = mainUrl + `&per_page=20`;
     allBlogs.innerHTML = "";

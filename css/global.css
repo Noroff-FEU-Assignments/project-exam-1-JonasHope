@@ -21,14 +21,14 @@ main {
 }
 
 .button_01 {
-    color: var(--c02);
+    color: var(--c05);
     padding: 15px 20px;
-    background-color: var(--c10);
+    background-color: var(--c01);
     border-radius: 10px;
     font-family: var(--ft01);
-    background-image: linear-gradient(var(--c01), var(--c01));
+    background-image: linear-gradient(var(--c03), var(--c03));
     background-size: 100% 0em;
-    background-position-y: 100%;
+    background-position: 100%;
     background-repeat: no-repeat;
     transition: background-size 0.25s ease-in-out;
 }
@@ -52,6 +52,18 @@ main {
     -webkit-animation: rotation 1s linear infinite;
     animation: rotation 1s linear infinite;
     margin: 50px auto;
+}
+
+/*---- scroll arrow ----*/
+
+.scroll_arrow {
+    display:none;
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    z-index: 99;
+    padding: 15px;
+    cursor: pointer;
 }
 
 @keyframes rotation {

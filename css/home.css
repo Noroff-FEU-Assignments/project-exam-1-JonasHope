@@ -143,30 +143,32 @@
 }
 
 @media (max-width: 800px) {
-    .slides > div {
-        flex-wrap: wrap;
-    }
-
-    .slider {
-        display:flex;
-        flex-direction: column-reverse;
-        max-width: 500px;
-    }
 
     .home_img {
-            max-width: 80%;
+        max-width: 80%;
     }
 
     .home_ft {
         flex-direction: column;
+        margin: auto;
     }
 
     .home_ft_text {
+        padding: 0px;
         max-width: 80%;
+    }
+
+    .my_blog_container {
+        max-width: 80%;
+        margin:auto;
     }
 
     .section_part02 a {
         flex-direction: column;
+    }
+
+    .section_text {
+        padding: 0px;
     }
 
     .section_img {
@@ -174,8 +176,13 @@
     }
 
     .section_part01 {
-        max-width: 80%;
-        margin: 40px auto;
+        max-width: 100%;
+        margin: 60px auto;
+    }
+
+    .slider {
+        display:flex;
+        flex-direction: column-reverse;
     }
 
     .slider_header h2 {
@@ -183,6 +190,7 @@
     }
 
     .slider_text {
+        text-align: center;
         padding: 15px 0px;
     }
 
@@ -213,5 +221,26 @@
 
     body {
         text-align: center;
+    }
+
+    .slides > div {
+        flex-direction: column;
+    }
+
+    .slider_card {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .slider_img {
+        min-height: 80px;
+    }
+
+    .slider_text {
+        padding: 0px;
+    }
+
+    .slider {
+        max-width: 100%;
     }
 }

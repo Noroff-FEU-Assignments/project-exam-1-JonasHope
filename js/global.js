@@ -16,7 +16,7 @@ header.innerHTML =
             </a>
         </div>
         <div class="nav_container">
-            <nav>
+            <nav class="hide_nav">
                 <ul>
                     <li><a href="index.html" class="nav_link">Home</a></li>
                     <li><a href="blogs.html" class="nav_link">Blogs</a></li>
@@ -25,17 +25,21 @@ header.innerHTML =
                 </ul>
             </nav>
         </div>
-    </div>`
+    </div>`;
+
+
+/*----hamburger menu ----*/
 
 function hamburgerMenu() {
-	const menu = document.querySelector(".nav_container");
+    const nav = document.querySelector("nav");
 	
-	if (menu.style.display === "block") {
-	  menu.style.display = "none";
+	if (nav.classList.contains("hide_nav")) {
+	  nav.classList.remove("hide_nav")
 	} else {
-	  menu.style.display = "block";
+	  nav.classList.add("hide_nav")
 	}
-  }
+  };
+
 
 /*---- practising createElement ----*/
     
