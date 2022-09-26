@@ -1,20 +1,3 @@
-/*---- hotjar ----*/
-
-const head = document.querySelector(`head`);
-
-head.innerHTML +=
-    `<!-- Hotjar Tracking Code for https://cheery-cobbler-7853ae.netlify.app/ -->
-    <script>
-        (function(h,o,t,j,a,r){
-            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-            h._hjSettings={hjid:3174635,hjsv:6};
-            a=o.getElementsByTagName('head')[0];
-            r=o.createElement('script');r.async=1;
-            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-            a.appendChild(r);
-        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-    </script>`
-
 /*------ Header -------*/
 
 const header = document.querySelector(`header`);
