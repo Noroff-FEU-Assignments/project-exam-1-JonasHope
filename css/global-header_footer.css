@@ -83,7 +83,7 @@ footer {
         left: 50%;
         top: 240px;
         transform: translate(-50%,-50%);
-        background-color: var(--c01);
+        background-color: var(--c03);
         width: 100%;
     }
 
