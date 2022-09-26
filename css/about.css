@@ -48,6 +48,10 @@
         padding:20px;
         margin: auto;
     }
+
+    footer {
+        background-color: var(--c05);
+    }
 }
 
 @media (max-width: 600px) {
