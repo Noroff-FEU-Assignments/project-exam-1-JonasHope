@@ -8,6 +8,7 @@ body {
 
 main {
     min-height: 100vh;
+    padding-top:80px;
 }
 
 .layer {
@@ -26,9 +27,9 @@ main {
     background-color: var(--c01);
     border-radius: 10px;
     font-family: var(--ft01);
-    background-image: linear-gradient(var(--c03), var(--c03));
+    background-image: linear-gradient(var(--c01), var(--c11));
     background-size: 100% 0em;
-    background-position: 100%;
+    background-position-y: 100%;
     background-repeat: no-repeat;
     transition: background-size 0.25s ease-in-out;
 }
@@ -85,8 +86,12 @@ main {
     display:none;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 450px) {
     .content_width {
-        padding: 20px;
+        padding: 40px 5px 10px 5px;
+    }
+
+    main {
+        padding-top:100px;
     }
 }

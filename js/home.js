@@ -85,12 +85,12 @@ function createHTML(homeSlider, ftImage, sectionCont){
                         <h3>${sliderData.title.rendered}</h3>
                         <p class="slider_ex">${sliderData.excerpt.rendered}</p>
                         <hr>
-                        <p id="date-fix-${sliderData.id}" class="slider_date">Post date: ${sliderData.date}</p>
+                        <p id='date-fix-${sliderData.id}' class="slider_date">${sliderData.date}</p>
                     </div>
                 </a>`
-                
 
-
+            const test = document.getElementById(`date-fix-${sliderData.id}`);
+            console.log(test)
         });
         slides.appendChild(sliderDiv);
     }

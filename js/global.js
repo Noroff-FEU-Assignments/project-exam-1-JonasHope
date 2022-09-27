@@ -3,7 +3,7 @@
 const header = document.querySelector(`header`);
 
 header.innerHTML = 
-    `<div class="header_container">
+    `<div class="header_container"><div class=header_content>
         <div class="logo_container">
             <a href="index.html">
                 <h2>Hopes Journey</h2>
@@ -25,7 +25,7 @@ header.innerHTML =
                 </ul>
             </nav>
         </div>
-    </div>`;
+    </div></div>`;
 
 
 /*----hamburger menu ----*/

@@ -5,16 +5,22 @@ a, li {
     list-style: none;
 }
 
-
-
 .header_container {
+    padding: 25px 0px;
+    min-width: 100%;
+    background-color: var(--c05);
+    position: fixed;
+    z-index: 999;
+    box-shadow: 0px 3px 6px var(--c04);
+}
+
+.header_content{
     display:flex;
     align-items: center;
     justify-content: space-between;
     margin: auto;
-    padding: 40px;
     max-width: 1200px;
-    background-color: var(--c05);
+    padding: 0px 40px;
 }
 
 .logo_container {
@@ -84,7 +90,7 @@ footer {
     .nav_container {
         position: absolute;
         left: 50%;
-        top: 240px;
+        top: 222px;
         transform: translate(-50%,-50%);
         background-color: var(--c03);
         width: 100%;
@@ -136,6 +142,10 @@ footer {
     }
 
     .nav_container {
-        top: 270px;
+        top: 245px;
+    }
+
+    .header_container {
+        padding-bottom: 10px;
     }
 }
