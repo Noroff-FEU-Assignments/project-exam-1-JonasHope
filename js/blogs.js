@@ -22,7 +22,7 @@ async function getData(url){
 getData(mainUrl)
 
 overskrift.innerHTML = `<div class="blogs_header">
-                            <h1>All my blogs</h1>
+                            <h1>All my blog posts</h1>
                             <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
                             <hr>
                         </div>`
@@ -39,9 +39,13 @@ function createHTML(blogPosts){
                     <h3>${blogData.title.rendered}</h3>
                     <p>${blogData.excerpt.rendered}</p>
                     <hr>
-                    <p class="date">${blogData.date}</p>
+                    <p id="date-fix-${blogData.id}" class="date">${blogData.date}</p>
                 </div>
             </a>`;
+
+        let dateUpdate = `${blogData.date}`;
+        let result = dateUpdate.substring(0, 10);
+        document.getElementById(`date-fix-${blogData.id}`).innerHTML = 'post date:' + ' ' + result;
 
         loader.classList.add("remove")
     })

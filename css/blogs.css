@@ -52,9 +52,15 @@ footer {
     border: 1px solid var(--c01);
 }
 
-.blogs_header {
+.blogs_header h1, .blogs_header p {
     max-width: 400px;
-    padding-left:25px;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+}
+
+.blogs_header hr {
+    max-width: 80%;
 }
 
 .date {
@@ -67,7 +73,7 @@ footer {
     text-align: center;
     margin: 10px auto;
     padding-bottom: 10px;
-    text-decoration: underline var(--c03);
+    text-decoration: underline var(--c01);
     cursor: pointer;
     max-width: 100px;
 }
@@ -85,10 +91,6 @@ footer {
 /*---- Media ----*/
 
 @media (max-width: 900px) {
-
-    .scroll_arrow {
-        right: 0px;
-    }
 
     .card_container {
         padding: 0px 60px;

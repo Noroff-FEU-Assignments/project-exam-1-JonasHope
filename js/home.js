@@ -70,24 +70,29 @@ function createHTML(homeSlider, ftImage, sectionCont){
 
     const total = homeSlider.length;
     const slides = document.getElementById("slides");
+
     for (let count = 0; count < total; count+=3) {
         const slide = homeSlider.slice(count,count+3);
-        console.log({slide})
-        const div = document.createElement("div");
-        div.id = `slide${(count+3)/3}`
+        const sliderDiv = document.createElement("div");
+        sliderDiv.id = `slide${(count+3)/3}`
+
         slide.forEach(function(sliderData){
-            div.innerHTML +=
+            sliderDiv.innerHTML +=
+
                 `<a href="post.html?id=${sliderData.id}" class="slider_card">
                     <p class="slider_img" style="background-image: url('${sliderData._embedded['wp:featuredmedia']['0'].source_url}')" alt="${sliderData.title.rendered}"></p>
                     <div class="slider_text">
                         <h3>${sliderData.title.rendered}</h3>
                         <p class="slider_ex">${sliderData.excerpt.rendered}</p>
                         <hr>
-                        <p class="slider_date">Post date: ${sliderData.date}</p>
+                        <p id="date-fix-${sliderData.id}" class="slider_date">Post date: ${sliderData.date}</p>
                     </div>
                 </a>`
+                
+
+
         });
-        slides.appendChild(div)
+        slides.appendChild(sliderDiv);
     }
     loader.classList.add("remove");
 };

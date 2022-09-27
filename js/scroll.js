@@ -5,7 +5,7 @@ let scroll = document.getElementById("scroll_btn")
 window.onscroll = function() {scrollUp()};
 
 function scrollUp() {
-    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
         scroll.style.display = "block";
     } 
     else {

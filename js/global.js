@@ -8,7 +8,7 @@ header.innerHTML =
             <a href="index.html">
                 <h2>Hopes Journey</h2>
             </a>
-            <h3> / ${document.title}<h3>
+            <h3> / ${document.title}</h3>
         </div>
         <div class="hamburger_container">
             <a href="javascript:void(0);" onclick="hamburgerMenu()">
@@ -19,7 +19,7 @@ header.innerHTML =
             <nav class="hide_nav">
                 <ul>
                     <li><a href="index.html" class="nav_link">Home</a></li>
-                    <li><a href="blogs.html" class="nav_link">Blogs</a></li>
+                    <li><a href="blogs.html" class="nav_link">Posts</a></li>
                     <li><a href="about.html" class="nav_link">About</a></li>
                     <li><a href="contact.html" class="nav_link">Contact</a></li>
                 </ul>

@@ -1,7 +1,7 @@
-const post = document.querySelector(".specific_post")
-const loader = document.querySelector(".loading_icon")
-const modalDiv = document.querySelector(".modal")
-const modalFt = document.querySelector(".modal_ft")
+const post = document.querySelector(".specific_post");
+const loader = document.querySelector(".loading_icon");
+const modalDiv = document.querySelector(".modal");
+const modalFt = document.querySelector(".modal_ft");
 
 const queryString = document.location.search;
 
@@ -9,7 +9,7 @@ const params = new URLSearchParams(queryString);
 
 const id = params.get("id");
 
-const url = "https://rd-products.site/wp-json/wp/v2/posts/" + id + "?_embed"
+const url = "https://rd-products.site/wp-json/wp/v2/posts/" + id + "?_embed";
 
     /* API Fetch specific blog posts */
 
@@ -28,36 +28,52 @@ async function getData(){
 getData();
 
 function createHTML(blogData){
+
+/*---- Blog post content ----*/
+
     post.innerHTML =
         `<div class="blog_header_content layer">
             <h1 class="font_2">${blogData.title.rendered}</h1>
-            <p>${blogData.excerpt.rendered}
+            <p>${blogData.excerpt.rendered}</p>
             <hr>
-            <p class="date">${blogData.date}</p>
+            <p id="date-fix" class="date">${blogData.date}</p>
             <a href="blogs.html" class="button_01">Blog posts</a>
         </div>
         <div class="blog_content">
             <img src="${blogData._embedded['wp:featuredmedia']['0'].source_url}" class="ft_img" alt="${blogData.title.rendered}"></img>
             <div class="blog_main_content" alt="${blogData.title.rendered}">${blogData.content.rendered}</div>
-        </div>`
+        </div>`;
+
+        let dateUpdate = `${blogData.date}`;
+        let result = dateUpdate.substring(0, 10);
+        document.getElementById(`date-fix`).innerHTML = 'post date:' + ' ' + result;
+
+/*---- Modal content images ----*/
 
     modalDiv.innerHTML = 
         `<div class="modal-content modal_width"
             alt="${blogData.title.rendered}">
             <span class="close">&times;</span>
             ${blogData.content.rendered}
-        </div>`
+        </div>`;
+
+/*---- Modal featured img ----*/
 
     modalFt.innerHTML = 
-        `<div class="modal-content modal_width">
+        `<div class="modal-content modal_width"
+            alt="${blogData.title.rendered}">
             <span class="close">&times;</span>
             <img src="${blogData._embedded['wp:featuredmedia']['0'].source_url}" class="ft_img alt="${blogData.title.rendered}"></img>
-        </div>`
+        </div>`;
+
+/*---- Change title ----*/
 
     document.title +=   
-        ` ${blogData.title.rendered}`
+        ` ${blogData.title.rendered}`;
 
-    loader.classList.add("remove")
+/*---- loader ----*/
+
+    loader.classList.add("remove");
 
 /*-------------- Modal 1 --------------*/
 

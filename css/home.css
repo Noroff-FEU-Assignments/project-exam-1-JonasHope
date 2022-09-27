@@ -29,7 +29,7 @@
 
 .section_part01 {
     max-width: 450px;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
 }
 
 .section_part02 a {
@@ -64,12 +64,11 @@
     border-radius: 50%;
     display:inline-block;
     margin: 10px;
-    background-color: var(--c06);
+    background-color: var(--c11);
 }
 
-.dot:hover,
-.dot:active {
-    background-color: var(--c03);
+.dot:hover {
+    background-color: var(--c01);
 }
 
 .slider_card {
@@ -116,7 +115,7 @@
   max-width: 1220px;
   overflow: hidden;
   margin: auto;
-  padding: 0px 40px;
+  padding: 0px 40px 20px 40px;
 }
 
 .slides {
@@ -227,12 +226,12 @@
     }
 
     .slider_card {
-        width: 80%;
+        width: 300px;
         margin: 10px auto;
     }
 
     .slider_img {
-        min-height: 80px;
+        min-height: 100px;
     }
 
     .slider_text {
@@ -241,5 +240,12 @@
 
     .slider {
         max-width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .slider_card {
+        width: 80%;
     }
 }

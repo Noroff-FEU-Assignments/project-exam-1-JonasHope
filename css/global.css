@@ -59,11 +59,18 @@ main {
 .scroll_arrow {
     display:none;
     position: fixed;
-    bottom: 100px;
-    right: 30px;
+    bottom: 0px;
+    right: 0px;
     z-index: 99;
-    padding: 15px;
     cursor: pointer;
+    width: 100%;
+    text-align: center;
+    background-color: var(--c09);
+}
+
+.scroll_arrow i {
+    color: var(--c01);
+    font-size: 2rem
 }
 
 @keyframes rotation {

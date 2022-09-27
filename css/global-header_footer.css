@@ -5,13 +5,16 @@ a, li {
     list-style: none;
 }
 
+
+
 .header_container {
     display:flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1200px;
     margin: auto;
     padding: 40px;
+    max-width: 1200px;
+    background-color: var(--c05);
 }
 
 .logo_container {
@@ -134,9 +137,5 @@ footer {
 
     .nav_container {
         top: 270px;
-    }
-
-    .header_container {
-        padding-bottom: 0px;
     }
 }
