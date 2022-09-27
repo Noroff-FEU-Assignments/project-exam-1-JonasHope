@@ -66,12 +66,16 @@ main {
     cursor: pointer;
     width: 100%;
     text-align: center;
-    background-color: var(--c09);
+    background-color: var(--c12);
 }
 
 .scroll_arrow i {
-    color: var(--c01);
+    color: var(--c05);
     font-size: 2rem
+}
+
+.scroll_arrow p {
+    margin: 10px auto;
 }
 
 @keyframes rotation {
