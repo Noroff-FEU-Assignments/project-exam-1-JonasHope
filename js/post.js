@@ -33,8 +33,8 @@ function createHTML(blogData){
 
     post.innerHTML =
         `<div class="blog_header_content layer">
-            <h1 class="font_2">${blogData.title.rendered}</h1>
-            <p>${blogData.excerpt.rendered}</p>
+            <h1>${blogData.title.rendered}</h1>
+            <div>${blogData.excerpt.rendered}</div>
             <hr>
             <p id="date-fix" class="date">${blogData.date}</p>
             <a href="blogs.html" class="button_01">Blog posts</a>
@@ -53,23 +53,23 @@ function createHTML(blogData){
     modalDiv.innerHTML = 
         `<div class="modal-content modal_width"
             alt="${blogData.title.rendered}">
-            <span class="close">&times;</span>
             ${blogData.content.rendered}
         </div>`;
 
 /*---- Modal featured img ----*/
 
     modalFt.innerHTML = 
-        `<div class="modal-content modal_width"
-            alt="${blogData.title.rendered}">
-            <span class="close">&times;</span>
+        `<div class="modal-content modal_width">
             <img src="${blogData._embedded['wp:featuredmedia']['0'].source_url}" class="ft_img alt="${blogData.title.rendered}"></img>
         </div>`;
 
-/*---- Change title ----*/
+/*---- Change title and meta ----*/
 
     document.title +=   
         ` ${blogData.title.rendered}`;
+
+    const metaFix = document.getElementsByTagName('meta')
+    metaFix.description.content = `${blogData.title.rendered}`;
 
 /*---- loader ----*/
 

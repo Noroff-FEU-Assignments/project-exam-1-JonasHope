@@ -16,14 +16,11 @@ footer {
     background-size: cover;
     background-position: center;
     min-height: 230px;
-    min-width: 350px;
 }
 
 .blog_posts {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    margin: auto;
 }
 
 .card {

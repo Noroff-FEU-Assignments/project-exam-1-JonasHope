@@ -37,7 +37,7 @@ function createHTML(blogPosts){
                 </div>
                 <div class="card_text">
                     <h3>${blogData.title.rendered}</h3>
-                    <p>${blogData.excerpt.rendered}</p>
+                    <div>${blogData.excerpt.rendered}</div>
                     <hr>
                     <p id="date-fix-${blogData.id}" class="date">${blogData.date}</p>
                 </div>

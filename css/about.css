@@ -1,6 +1,4 @@
 .about_content {
-    color: var(--tc01);
-    font-family: var(--ft02);
     letter-spacing: 1px;
     line-height: 24px;
     display:flex;
@@ -10,11 +8,8 @@
 .about_text {
     max-width: 600px;
     display:flex;
-    justify-content: space-evenly;
     flex-direction: column;
     margin: 20px;
-    background-color: var(--bc03);
-    box-shadow: 0 5px 10px var(--tc03);
 }
 
 .about_text a {
@@ -24,9 +19,6 @@
 .about_img_container {
     padding: 20px;
     margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .about_img {
@@ -47,6 +39,7 @@
     .about_container, .about_text {
         padding:20px;
         margin: auto;
+        text-align: center;
     }
 
     footer {

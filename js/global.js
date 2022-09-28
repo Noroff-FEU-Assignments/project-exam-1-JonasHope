@@ -8,7 +8,7 @@ header.innerHTML =
             <a href="index.html">
                 <h2>Hopes Journey</h2>
             </a>
-            <h3> / ${document.title}</h3>
+            <p> / ${document.title}</p>
         </div>
         <div class="hamburger_container">
             <a href="javascript:void(0);" onclick="hamburgerMenu()">
