@@ -11,6 +11,7 @@ const myBlog = document.querySelector(".my_blog");
 const sectionUrl = "https://rd-products.site/wp-json/wp/v2/pages/116?_embed";
 const sectionContent = document.querySelector(".section_content");
 
+/*---- api fetch ----*/
 
 async function getData(){
     try{
@@ -33,6 +34,7 @@ async function getData(){
 
 getData()
 
+/*---- featured image and text ----*/
 
 function createHTML(homeSlider, ftImage, sectionCont){
     ftImg.innerHTML +=
@@ -47,7 +49,8 @@ function createHTML(homeSlider, ftImage, sectionCont){
             </div>
         </div>`
     
-    
+/*---- main section image and text ----*/
+
     myBlog.innerHTML +=
         `<div class="my_blog_container">
             <div class="section_part01">
@@ -65,6 +68,8 @@ function createHTML(homeSlider, ftImage, sectionCont){
             </a></div>
         </div>`
 
+/*---- slider image and text ----*/
+
     sliderHeader.innerHTML =
         `<h2 class="content_width">Latest posts</h2>`
 
@@ -79,7 +84,7 @@ function createHTML(homeSlider, ftImage, sectionCont){
         slide.forEach(function(sliderData){
             sliderDiv.innerHTML +=
 
-                `<a href="post.html?id=${sliderData.id}" class="slider_card">
+                `<a href="post.html?id=${sliderData.id}" class="slider_card" name="slider cards">
                     <p class="slider_img" style="background-image: url('${sliderData._embedded['wp:featuredmedia']['0'].source_url}')" alt="${sliderData.title.rendered}"></p>
                     <div class="slider_text">
                         <h3>${sliderData.title.rendered}</h3>

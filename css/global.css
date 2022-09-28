@@ -4,10 +4,13 @@
 
 body {
     margin:0px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-main {
-    min-height: 100vh;
+main {  
     padding-top:80px;
 }
 
