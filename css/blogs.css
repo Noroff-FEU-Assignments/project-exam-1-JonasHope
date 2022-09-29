@@ -75,7 +75,7 @@ footer {
     max-width: 125px;
 }
 
-.view_more p {
+.view_more h3 {
     margin: 30px auto;
     font-size:1.4rem;
     transition: 0.3s ease-in-out;
