@@ -71,6 +71,10 @@
     background-color: var(--c01);
 }
 
+.dots p {
+    display: none;
+}
+
 .slider_card {
     transform: scale(0.95);
     box-shadow: 0 5px 10px var(--c09);
