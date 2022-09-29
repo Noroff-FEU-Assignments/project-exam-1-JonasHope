@@ -63,11 +63,11 @@ main {
 .scroll_arrow {
     display:none;
     position: fixed;
-    bottom: 0px;
+    bottom: 75px;
     right: 0px;
     z-index: 99;
     cursor: pointer;
-    width: 100%;
+    width: 50px;
     text-align: center;
     background-color: var(--c12);
 }

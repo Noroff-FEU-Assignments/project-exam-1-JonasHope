@@ -36,7 +36,7 @@ function createHTML(blogPosts){
                     style="background-image: url('${blogData._embedded['wp:featuredmedia']['0'].source_url}')" alt="${blogData.title.rendered}">
                 </div>
                 <div class="card_text">
-                    <h3>${blogData.title.rendered}</h3>
+                    <h2>${blogData.title.rendered}</h2>
                     <div>${blogData.excerpt.rendered}</div>
                     <hr>
                     <p id="date-fix-${blogData.id}" class="date">${blogData.date}</p>
