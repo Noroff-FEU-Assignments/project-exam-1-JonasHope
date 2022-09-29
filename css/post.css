@@ -107,4 +107,8 @@ img {
     .blog_main_content h3 {
         margin: 0px auto 10px auto;
     }
+
+    .modal-content img {
+    max-width: 90%;
+    }
 }
