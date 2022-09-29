@@ -28,7 +28,7 @@ contactContainer.innerHTML +=
                 </div>
 
                 <div class="input_container">
-                    <label>Subject</label>
+                    <label for="subject">Subject</label>
                     <input type="subject" name="subject" id="subject"></input>
                     <div class="error_msg">
                         <div id="subject-error" class="error">Minimum length of 15</div>
@@ -36,7 +36,7 @@ contactContainer.innerHTML +=
                 </div>
 
                 <div class="input_container">
-                    <label>Message</label>
+                    <label for="textarea">Message</label>
                     <textarea type="textarea" name="textarea" id="textarea" rows="10" cols="50"></textarea>
                     <div class="error_msg">
                         <div id="text-error" class="error">Minimum length of 25</div>
