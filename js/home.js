@@ -71,7 +71,7 @@ function createHTML(homeSlider, ftImage, sectionCont){
 /*---- slider image and text ----*/
 
     sliderHeader.innerHTML =
-        `<h2 class="content_width">Latest posts</h2>`
+        `<h2 class="content_width">Latest posts</h2>`;
 
     const total = homeSlider.length;
     const slides = document.getElementById("slides");
@@ -79,12 +79,12 @@ function createHTML(homeSlider, ftImage, sectionCont){
     for (let count = 0; count < total; count+=3) {
         const slide = homeSlider.slice(count,count+3);
         const sliderDiv = document.createElement("div");
-        sliderDiv.id = `slide${(count+3)/3}`
+        sliderDiv.id = `slide${(count+3)/3}`;
 
         slide.forEach(function(sliderData){
             sliderDiv.innerHTML +=
 
-                `<a href="post.html?id=${sliderData.id}" class="slider_card" name="slider cards">
+                `<a href="post.html?id=${sliderData.id}" class="slider_card" name="slider">
                     <p class="slider_img" style="background-image: url('${sliderData._embedded['wp:featuredmedia']['0'].source_url}')" alt="${sliderData.title.rendered}"></p>
                     <div class="slider_text">
                         <h3>${sliderData.title.rendered}</h3>
