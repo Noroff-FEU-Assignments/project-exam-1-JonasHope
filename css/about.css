@@ -28,6 +28,11 @@
     width: 300px;
 }
 
+.about_text h2 {
+    font-size: 1.8rem;
+    color: var(--c01);
+}
+
 @media (max-width: 900px) {
 
     .about_content {

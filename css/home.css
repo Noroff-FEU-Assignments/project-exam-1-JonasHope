@@ -9,7 +9,7 @@
 
 .home_img {
     max-width: 50%;
-    height: auto;
+    height: 100%;
 }
 
 .home_ft_text {
@@ -25,6 +25,7 @@
 
 .section_img {
     max-width: 50%;
+    height: 100%;
 }
 
 .section_part01 {

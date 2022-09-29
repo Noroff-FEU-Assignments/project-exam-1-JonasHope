@@ -71,16 +71,10 @@ function createHTML(blogData){
     const metaFix = document.getElementsByTagName('meta')
     metaFix.description.content = `${blogData.title.rendered}`;
 
-/*---- loader ----*/
-
-    loader.classList.add("remove");
-
 /*-------------- Modal 1 --------------*/
 
     const modal = document.getElementById("modal_container");
     const image = document.getElementsByClassName("blog_main_content")[0].querySelector("img");
-    
-    modal.style.display = "none"
 
     image.onclick = function() {
         modal.style.display = "block";
@@ -97,8 +91,6 @@ function createHTML(blogData){
     const modalFeat = document.getElementById("modal-ft_container");
     const imageFeat = document.getElementsByClassName("blog_content")[0].querySelector("img");
 
-    modalFeat.style.display = "none"
-
     imageFeat.onclick = function() {
     modalFeat.style.display = "block";  
 
@@ -108,4 +100,8 @@ function createHTML(blogData){
             }
         })
     }
+
+/*---- loader ----*/
+
+    loader.classList.add("remove");
 };

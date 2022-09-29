@@ -10,8 +10,7 @@ header.innerHTML =
             </a>
             <p> / ${document.title}</p>
         </div>
-        <div class="hamburger_container">
-            <a href="javascript:void(0);" onclick="hamburgerMenu()">
+        <div class="hamburger_container" onclick="hamburgerMenu()">
                 <i class="material-icons hamburger">&#xe5d2;</i>
             </a>
         </div>
