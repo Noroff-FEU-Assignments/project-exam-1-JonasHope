@@ -1,9 +1,9 @@
 const mainUrl = "https://rd-products.site/wp-json/wp/v2/posts?_embed";
 const allBlogs = document.querySelector(".blog_posts");
-const viewMore = document.querySelector("#more")
-const fix = document.querySelector(".view_more")
-const loader = document.querySelector(".loading_icon")
-const overskrift = document.querySelector(".head_01")
+const viewMore = document.querySelector("#more");
+const fix = document.querySelector(".view_more");
+const loader = document.querySelector(".loading_icon");
+const overskrift = document.querySelector(".head_01");
 
     /* API Fetch all blog posts */
 
@@ -25,7 +25,7 @@ overskrift.innerHTML = `<div class="blogs_header">
                             <h1>All my blog posts</h1>
                             <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
                             <hr>
-                        </div>`
+                        </div>`;
 
 function createHTML(blogPosts){
     blogPosts.forEach(function(blogData){
@@ -47,7 +47,7 @@ function createHTML(blogPosts){
         let result = dateUpdate.substring(0, 10);
         document.getElementById(`date-fix-${blogData.id}`).innerHTML = 'post date:' + ' ' + result;
 
-        loader.classList.add("remove")
+        loader.classList.add("remove");
     })
 };
 
@@ -57,5 +57,5 @@ viewMore.onclick = function() {
     const updatedUrl = mainUrl + `&per_page=20`;
     allBlogs.innerHTML = "";
     getData(updatedUrl);
-    fix.classList.add("remove")
+    fix.classList.add("remove");
 }

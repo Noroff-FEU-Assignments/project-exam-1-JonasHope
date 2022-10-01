@@ -1,5 +1,5 @@
 const contactContainer = document.querySelector(".contact_container");
-const loader = document.querySelector(".loading_icon")
+const loader = document.querySelector(".loading_icon");
 
 contactContainer.innerHTML +=
     `<div class="content_width contact_content">
@@ -48,15 +48,15 @@ contactContainer.innerHTML +=
         </div>
     </div>`
                             
-loader.classList.add("remove")
+loader.classList.add("remove");
 
 
     /* Form Validation */
 
 
 const form = document.querySelector(`form`);
-const successfully = document.querySelector(`.successfully`)
-const button = document.querySelector(".submit_btn")
+const successfully = document.querySelector(`.successfully`);
+const button = document.querySelector(".submit_btn");
 
 const fullName = document.querySelector(`#name`);
 const nameError = document.querySelector(`#name-error`);
@@ -100,9 +100,9 @@ function formCheck(event) {
     };
 
     if (check(fullName.value, 5) && check(subject.value, 15) && checkEmail(email.value) && check(textArea.value, 25)) {
-        textArea.value = ""
-        subject.value = ""
-        successfully.style.display = "block"
+        textArea.value = "";
+        subject.value = "";
+        successfully.style.display = "block";
         setTimeout(function() {
             window.location.href = "index.html";
         },5000);

@@ -44,9 +44,16 @@ function createHTML(blogData){
             <div class="blog_main_content" alt="${blogData.title.rendered}">${blogData.content.rendered}</div>
         </div>`;
 
+/*---- change blog date ----*/
+
         let dateUpdate = `${blogData.date}`;
         let result = dateUpdate.substring(0, 10);
         document.getElementById(`date-fix`).innerHTML = 'post date:' + ' ' + result;
+
+/*---- change blog post title in header ----*/
+
+    const pageTitle = document.querySelector(".blog-post_title");
+    pageTitle.innerHTML = `/ ${blogData.title.rendered}`;
 
 /*---- Modal content images ----*/
 
@@ -68,7 +75,7 @@ function createHTML(blogData){
     document.title +=   
         ` ${blogData.title.rendered}`;
 
-    const metaFix = document.getElementsByTagName('meta')
+    const metaFix = document.getElementsByTagName('meta');
     metaFix.description.content = `${blogData.title.rendered}`;
 
 /*-------------- Modal 1 --------------*/
@@ -82,9 +89,9 @@ function createHTML(blogData){
             window.addEventListener("click", function(event) {
             if (event.target == modal) {
                 modal.style.display = "none";
-            }
-        })
-    }
+            };
+        });
+    };
 
 /*-------------- Modal 2 --------------*/
 
@@ -97,9 +104,9 @@ function createHTML(blogData){
         window.addEventListener("click", function(event) {
             if (event.target == modalFeat) {
                 modalFeat.style.display = "none";
-            }
-        })
-    }
+            };
+        });
+    };
 
 /*---- loader ----*/
 

@@ -30,11 +30,11 @@ main {
     background-color: var(--c01);
     border-radius: 10px;
     font-family: var(--ft01);
-    background-image: linear-gradient(var(--c01), var(--c11));
+    background-image: linear-gradient(var(--c10), var(--c10));
     background-size: 100% 0em;
-    background-position-y: 100%;
+    background-position-x: 100%;
     background-repeat: no-repeat;
-    transition: background-size 0.25s ease-in-out;
+    transition: background-size 0.3s ease-in-out;
 }
 
 .button_01:hover,
@@ -74,7 +74,8 @@ main {
 
 .scroll_arrow i {
     color: var(--c05);
-    font-size: 2rem
+    font-size: 2rem;
+    padding: 5px 0px
 }
 
 .scroll_arrow p {

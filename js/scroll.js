@@ -1,6 +1,6 @@
 /*---- scroll top button ----*/
 
-let scroll = document.getElementById("scroll_btn")
+let scroll = document.getElementById("scroll_btn");
 
 window.onscroll = function() {scrollUp()};
 

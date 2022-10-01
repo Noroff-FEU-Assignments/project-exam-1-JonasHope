@@ -47,28 +47,36 @@ header {
 
 /*---- nav ----*/
 
-.nav_container ul {
-    display:flex;
-    margin: 0px;
-    padding: 0px;
+.current_page {
+    background-size: 90% 0.1em;
+    color: var(--c01)
+}
+
+.nav_link {
+    background-size: 0% 0.1em;
+    color: var(--c03);
 }
 
 .nav_container a {
     padding: 10px 20px;
-    color: var(--c03);
     font-family: var(--ft01);
     background-image: linear-gradient(var(--c01), var(--c01));
-    background-size: 0% 0.1em;
     background-position-x: 50%;
     background-position-y: 100%;
     background-repeat: no-repeat;
     transition: background-size 0.3s ease-in-out;
 }
 
-.nav_container a:hover,
-.nav_container a:focus,
-.nav_container a:active {
-    background-size: 100% 0.1em;
+.nav_container ul {
+    display:flex;
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav_link:hover,
+.nav_link:focus,
+.nav_link:active {
+    background-size: 90% 0.1em;
 }
 
 /* ---- hamburger ----*/
@@ -110,7 +118,6 @@ footer {
 
     .nav_container ul {
         flex-direction: column;
-
     }
 
     .nav_container li {

@@ -81,8 +81,8 @@ footer {
     transition: 0.3s ease-in-out;
 }
 
-.view_more h5:hover {
-    transform: scale(1.1);
+.view_more h3:hover {
+    transform: scale(1.05);
     
 }
 

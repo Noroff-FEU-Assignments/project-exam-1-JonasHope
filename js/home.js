@@ -47,7 +47,7 @@ function createHTML(homeSlider, ftImage, sectionCont){
                    <a href="blogs.html" class="button_01">Blog posts</a>
                 </div>
             </div>
-        </div>`
+        </div>`;
     
 /*---- main section image and text ----*/
 
@@ -66,7 +66,7 @@ function createHTML(homeSlider, ftImage, sectionCont){
                     <p>${sectionCont.content.rendered}</p>
                 </div>
             </a></div>
-        </div>`
+        </div>`;
 
 /*---- slider image and text ----*/
 
@@ -92,10 +92,10 @@ function createHTML(homeSlider, ftImage, sectionCont){
                         <hr>
                         <p id='date-fix-${sliderData.id}' class="slider_date">${sliderData.date}</p>
                     </div>
-                </a>`
+                </a>`;
 
             const test = document.getElementById(`date-fix-${sliderData.id}`);
-            console.log(test)
+            console.log(test);
         });
         slides.appendChild(sliderDiv);
     }
