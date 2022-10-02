@@ -82,6 +82,7 @@ function createHTML(blogData){
 
     const modal = document.getElementById("modal_container");
     const image = document.getElementsByClassName("blog_main_content")[0].querySelector("img");
+    image.alt = `${blogData.title.rendered}`
 
     image.onclick = function() {
         modal.style.display = "block";

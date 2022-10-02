@@ -30,7 +30,7 @@ function createHTML(data){
                                 </div>
                                 <div class="about_img_container">
                                     <div class="about_img" style="background-image: 
-                                        url('${data._embedded['wp:featuredmedia']['0'].source_url}')" alt="${data.title.rendered}">
+                                        url('${data._embedded['wp:featuredmedia']['0'].source_url}')" alt="Image of the blog creater">
                                     </div>
                                 </div>
                             </div>`;
