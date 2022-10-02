@@ -31,7 +31,7 @@ header {
     align-items: center;
 }
 
-.logo_container h2 {
+.logo {
     color: var(--c01);
     font-family: var(--ft02);
     font-size: 2rem;

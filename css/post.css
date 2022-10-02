@@ -6,6 +6,10 @@
     box-shadow: 0 3px 6px var(--c09);
 }
 
+.blog_content img {
+    transition: 0.3s ease-in-out;
+}
+
 .blog_content img:hover {
     transform: scale(1.01);
 }

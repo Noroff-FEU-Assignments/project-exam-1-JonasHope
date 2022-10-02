@@ -5,7 +5,7 @@ const fix = document.querySelector(".view_more");
 const loader = document.querySelector(".loading_icon");
 const overskrift = document.querySelector(".head_01");
 
-    /* API Fetch all blog posts */
+/*---- API Fetch all blog posts ----*/
 
 async function getData(url){
     try{
@@ -21,11 +21,15 @@ async function getData(url){
 
 getData(mainUrl)
 
+/*---- add h1 above blog posts ----*/
+
 overskrift.innerHTML = `<div class="blogs_header">
                             <h1>All my blog posts</h1>
                             <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
                             <hr>
                         </div>`;
+
+/*---- display first 10 blogposts ----*/
 
 function createHTML(blogPosts){
     blogPosts.forEach(function(blogData){
@@ -42,6 +46,8 @@ function createHTML(blogPosts){
                     <p id="date-fix-${blogData.id}" class="date">${blogData.date}</p>
                 </div>
             </a>`;
+
+/*---- fix date on blog posts ----*/
 
         let dateUpdate = `${blogData.date}`;
         let result = dateUpdate.substring(0, 10);

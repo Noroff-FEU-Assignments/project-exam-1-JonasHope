@@ -3,7 +3,7 @@ const aboutContainer = document.querySelector(".about_container");
 const loader = document.querySelector(".loading_icon");
 
 
-    /* API Fetch About page */
+/*---- API Fetch About page ----*/
 
 async function getData(){
     try{
