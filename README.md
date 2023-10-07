@@ -5,8 +5,8 @@
 ## Description
 
 This is a travel blog page made for my projext exam year 1. 
-All the content of the page is stored in a wordpress database and fetched uising javascript.
-Lorem ipsum is used for the maintext paragraphs, headers should make sence. 
+All the content of the page is stored in a wordpress database.
+Lorem ipsum is used for the maintext paragraphs. 
 
 ## :hammer_and_wrench: Built With:
 <div>
